@@ -26,7 +26,7 @@ const Hero = () => {
           { img: img3, text: "Lorem ipsum dolor sit amet" },
         ].map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col md:flex-row-reverse md:items-center md:justify-between"> 
+            <div className="flex flex-col md:flex-row-reverse md:items-center md:justify-between pb-8"> 
               <div className="w-full md:w-1/2 p-4 md:p-8">
                 <img
                   src={slide.img}
@@ -41,16 +41,16 @@ const Hero = () => {
                 
                 <div className="mt-4 flex flex-col md:flex-col max-md:items-center lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0"> 
                   <button
-                    className="bg-primary text-white py-2 px-4 rounded-lg border flex items-center max-w-40" 
+                    className="bg-primary text-white py-2 px-6 rounded-lg border flex items-center max-w-52" 
                   >
                     Shop Now
-                    <img src={rightArrow} alt="arrow" className="ml-2" height={20} width={20} />
+                    <img src={rightArrow} alt="arrow" className="ml-6" height={20} width={20} />
                   </button>        
                   <button
-                    className="bg-gray-200 text-primary py-2 px-4 rounded-lg border flex items-center max-w-40 max-md:border-none max-md:bg-transparent" 
+                    className="bg-gray-300 text-primary py-2 px-4 rounded-lg border flex items-center max-w-52 max-md:border-none max-md:bg-transparent" 
                   >
                     Take the Quiz
-                    <img src={rightArrow} alt="arrow" className="ml-2" height={20} width={20} />
+                    <img src={rightArrow} alt="arrow" className="ml-6" height={20} width={20} />
                   </button>
                 </div>
               </div>
@@ -58,7 +58,7 @@ const Hero = () => {
           </SwiperSlide>
         ))}
 
-      <div className="flex ml-16 max-md:justify-center max-md:ml-0 lg:justify-start ">
+      <div className="flex ml-16 mb-8 max-md:justify-center max-md:ml-0 lg:justify-start  ">
         <button className="swiper-button-prev text-primary bg-white border
          border-primary rounded-2xl px-2 text-2xl">
           ←
