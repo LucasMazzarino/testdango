@@ -3,7 +3,7 @@ import React from 'react';
 const Modal = ({ cart = [], totalPrice = 0, onClose, onRemove }) => {
   return (
     <div
-      className="fixed top-0 right-0 h-full w-1/3 bg-white z-50 p-6"
+      className="fixed top-0 right-0 h-full md:w-1/3 ms:w-full bg-white z-50 p-6"
       style={{ transform: 'translateX(0)' }}
     >
       <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
@@ -17,7 +17,7 @@ const Modal = ({ cart = [], totalPrice = 0, onClose, onRemove }) => {
                 alt={product.name || 'Product'} 
                 className="w-12 h-12 rounded object-cover"
               />
-              <span>{product.name || 'Product'}</span>
+              <span className='hidden md:block'>{product.name || 'Product'}</span>
               <span>{product.price}</span>
               <button
                   className="bg-red-500 text-white px-2 py-1 rounded"
